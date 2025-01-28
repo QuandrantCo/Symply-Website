@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 
     @stack('css')
 
@@ -19,12 +20,12 @@
 
 <body>
 
-    <x-navbar/>
+    <x-navbar />
 
     <main>
         @yield('content')
     </main>
-    <x-footer/>
+    <x-footer />
     @stack('js')
     <script src="{{ asset('js/navbar.js') }}"></script>
 </body>
