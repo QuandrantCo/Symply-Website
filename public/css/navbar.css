@@ -1,0 +1,121 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #FFFFFF;
+    color: #47301C;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.logo a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo a:hover {
+    transform: scale(1.1);
+}
+
+.logo img {
+    display: block;
+    max-width: 120px;
+    height: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #47301C;
+    font-weight: bold;
+    transition: color 0.3s;
+    line-height: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-links a:hover {
+    color: #7a522f;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #47301C;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 70px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #7a522f;
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links a {
+        color: #FFFFFF;
+        padding: 10px 0;
+        line-height: normal;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .logo {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .logo img {
+        max-width: 100px;
+    }
+
+    .show-left {
+        display: block;
+    }
+    .show-right {
+        display: none;
+    }
+
+
+}
+
