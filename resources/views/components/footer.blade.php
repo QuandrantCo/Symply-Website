@@ -1,7 +1,7 @@
 <div class="container-footer">
     {{-- Footer Logo --}}
     <div class="footer-logo">
-        <img src="{{ asset('images/logo-symply.svg') }}" alt="Symply Haircut">
+        <img src="{{ asset('images/academy/logo-symply.svg') }}" alt="Symply Haircut">
 
         <div class="dots">
             <div class="dots-item">
