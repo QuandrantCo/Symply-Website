@@ -1,33 +1,36 @@
-.container-footer{
+.container-footer {
     color: white;
-    height: 471.5px;
+    height: auto; /* Mengatur tinggi agar menyesuaikan konten */
     display: flex;
-    justify-content: space-around;
-    padding: 120px;
+    justify-content: space-between; /* Sesuaikan elemen di antara kiri dan kanan */
+    flex-wrap: wrap; /* Memungkinkan elemen untuk berpindah baris */
+    padding: 40px 20px; /* Mengurangi padding agar tidak terlalu besar */
+    background-color: #47301C;
     max-width: 100%;
     margin: 0 auto;
-    background-color: #47301C;
 }
 
-.footer-logo{
+.footer-logo {
     text-align: center;
+    flex: 1 1 250px; /* Memastikan logo memiliki ukuran yang fleksibel */
+    margin-bottom: 20px;
 }
 
-.footer-logo img{
+.footer-logo img {
     background-color: white;
     width: 131px;
     height: 129px;
-    left: 17px;
-    border-radius: 319px;
+    border-radius: 50%;
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
 }
 
-.footer-logo .dots{
+.footer-logo .dots {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
-.footer-logo .dots .dots-item{
+.footer-logo .dots .dots-item {
     width: 40px;
     height: 40px;
     background-color: #d3d3d3;
@@ -35,22 +38,44 @@
     margin: 0 10px;
 }
 
-.footer-contact, .footer-opening{
+.footer-contact, .footer-opening {
     max-width: 300px;
+    flex: 1 1 250px; /* Menjaga elemen ini tetap responsif */
+    margin-bottom: 20px;
 }
 
-.footer-contact p, .footer-opening p{
+.footer-contact p, .footer-opening p {
     margin: 5px 0;
 }
 
-.footer-contact .footer-map{
+.footer-contact .footer-map {
     display: flex;
     align-items: center;
 }
 
-.footer-contact .footer-map i{
+.footer-contact .footer-map i {
     margin-right: 5px;
 }
 
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+    .container-footer {
+        padding: 20px; /* Mengurangi padding untuk layar kecil */
+        flex-direction: column; /* Mengubah arah flex menjadi kolom */
+        align-items: center; /* Menyusun elemen-elemen di tengah */
+    }
 
+    .footer-logo img {
+        width: 100px; /* Menyesuaikan ukuran gambar logo */
+        height: 100px;
+    }
 
+    .footer-contact, .footer-opening {
+        text-align: center; /* Menyusun teks ke tengah */
+        margin: 10px 0;
+    }
+
+    .footer-map {
+        justify-content: center;
+    }
+}

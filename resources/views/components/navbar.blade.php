@@ -1,30 +1,42 @@
-<div>
+<header>
     <div class="navbar">
-        <div class="navbar-container">
-
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-
-
-            <ul id="menu-left" class="nav-links">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#academy">ACADEMY</a></li>
-                <li><a href="#book">BOOK</a></li>
-            </ul>
-
-            <div class="logo">
-                <a href="#home">
-                    <img src="{{ asset('storage/image/logo-symply.svg') }}" alt="Logo">
-                </a>
-            </div>
-
-
-            <ul id="menu-right" class="nav-links">
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
-            </ul>
+        <ul class="links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#academy">ACADEMY</a></li>
+            <li><a href="#book">BOOK</a></li>
+        </ul>
+        <div class="logo"><img src="{{ asset('image/service/logo-symply.svg') }}" alt="Logo"></div>
+        <ul class="links">
+            <li><a href="#home">SERVICES</a></li>
+            <li><a href="#academy">ABOUT US</a></li>
+            <li><a href="#book">CONTACT US</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <i class="fas fa-bars"></i>
         </div>
     </div>
-</div>
+    <div class="dropdown-menu">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#academy">ACADEMY</a></li>
+        <li><a href="#book">BOOK</a></li>
+        <li><a href="#home">SERVICES</a></li>
+        <li><a href="#academy">ABOUT US</a></li>
+        <li><a href="#book">CONTACT US</a></li>
+    </div>
+</header>
+@push('js')
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDown = document.querySelector('.dropdown-menu');
+
+        toggleBtn.onclick = function() {
+            dropDown.classList.toggle('open');
+            const isOpen = dropDown.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen ?
+                'fas fa-xmark' :
+                'fas fa-bars';
+        }
+    </script>
+@endpush
