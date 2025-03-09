@@ -22,7 +22,7 @@
         {
             "src": "/storage/(.*)",
             "dest": "/public/storage/$1"
-        }
+        },
         {
             "src": "/build/(.*)",
             "dest": "/public/build/"
