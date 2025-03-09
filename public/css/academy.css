@@ -25,9 +25,8 @@
     font-size: 1rem;
     color: white;
 }
-
 .background-academy {
-    background-image: url('/image/academy/back-academy.svg');
+    background-image: url('/images/academy/back-academy.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
