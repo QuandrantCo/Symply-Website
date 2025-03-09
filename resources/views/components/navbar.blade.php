@@ -5,7 +5,7 @@
             <li><a href="#academy">ACADEMY</a></li>
             <li><a href="#book">BOOK</a></li>
         </ul>
-        <div class="logo"><img src="{{ asset('image/service/logo-symply.svg') }}" alt="Logo"></div>
+        <div class="logo"><img src="{{ secure_asset('image/service/logo-symply.svg') }}" alt="Logo"></div>
         <ul class="links">
             <li><a href="#home">SERVICES</a></li>
             <li><a href="#academy">ABOUT US</a></li>
