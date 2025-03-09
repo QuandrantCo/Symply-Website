@@ -1,6 +1,6 @@
 <div>
     @push('css')
-        <link rel="stylesheet" href="{{ asset('/public/css/academy.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/academy.css') }}">
     @endpush
     <div class="academy">
         <div class="background-academy">

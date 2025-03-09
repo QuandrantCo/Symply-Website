@@ -1,6 +1,6 @@
 <div>
     @push('css')
-        <link rel="stylesheet" href="{{ asset('public/css/service.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/service.css') }}">
     @endpush
 
     <div class="container-service">
@@ -12,14 +12,14 @@
         </div>
         <div class="content-service">
             <div class="card-service">
-                <img src="{{ asset('public/image/service/service-icon.png') }}" alt="Service 1" id="myBtn">
-                <img src="{{ asset('public/image/service/service-icon.png') }}" alt="Service 2">
-                <img src="{{ asset('public/image/service/service-icon.png') }}" alt="Service 3">
-                <img src="{{ asset('public/image/service/service-icon.png') }}" alt="Service 4">
-                <img src="{{ asset('public/image/service/service-icon.png') }}" alt="Service 5">
-                <img src="{{ asset('public/image/service/service-icon.png') }}" alt="Service 6">
-                <img src="{{ asset('public/image/service/service-icon.png') }}" alt="Service 7">
-                <img src="{{ asset('public/image/service/service-icon.png') }}" alt="Service 8">
+                <img src="{{ asset('image/service/service-icon.png') }}" alt="Service 1" id="myBtn">
+                <img src="{{ asset('image/service/service-icon.png') }}" alt="Service 2">
+                <img src="{{ asset('image/service/service-icon.png') }}" alt="Service 3">
+                <img src="{{ asset('image/service/service-icon.png') }}" alt="Service 4">
+                <img src="{{ asset('image/service/service-icon.png') }}" alt="Service 5">
+                <img src="{{ asset('image/service/service-icon.png') }}" alt="Service 6">
+                <img src="{{ asset('image/service/service-icon.png') }}" alt="Service 7">
+                <img src="{{ asset('image/service/service-icon.png') }}" alt="Service 8">
             </div>
         </div>
 
@@ -31,7 +31,7 @@
                 <div class="modal-body">
                     <!-- Main logo and description (Left Side) -->
                     <div class="main-logo">
-                        <img src="{{ asset('public/image/service/service-icon.png') }}" alt="Service 8">
+                        <img src="{{ asset('image/service/service-icon.png') }}" alt="Service 8">
                         <h2 class="model-title">CREAMBATH</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the industry's standard dummy text ever since the 1500s...</p>
@@ -39,9 +39,9 @@
 
                     <!-- Small logos positioned vertically (Right Side) -->
                     <div class="small-logos">
-                        <img src="{{ asset('public/image/service/Logo-symply.png') }}" alt="Logo 1" class="logo-small">
-                        <img src="{{ asset('public/image/service/Logo-symply.png') }}" alt="Logo 2" class="logo-small">
-                        <img src="{{ asset('public/image/service/Logo-symply.png') }}" alt="Logo 3" class="logo-small">
+                        <img src="{{ asset('image/service/Logo-symply.png') }}" alt="Logo 1" class="logo-small">
+                        <img src="{{ asset('image/service/Logo-symply.png') }}" alt="Logo 2" class="logo-small">
+                        <img src="{{ asset('image/service/Logo-symply.png') }}" alt="Logo 3" class="logo-small">
                     </div>
                 </div>
             </div>

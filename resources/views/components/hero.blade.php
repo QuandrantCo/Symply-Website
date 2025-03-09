@@ -1,6 +1,6 @@
 <div>
     @push('css')
-        <link rel="stylesheet" href="{{ asset('public/css/hero.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/hero.css') }}">
     @endpush
     <div>
         <div>
