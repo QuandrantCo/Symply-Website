@@ -12,7 +12,11 @@
             "dest": "/public/$1/$2"
         },
         {
-            "src": "images/(.*)",
+            "src": "/fontawesome/(.*)",
+            "dest": "/public/fontawesome/$1"
+        },
+        {
+            "src": "/images/(.*)",
             "dest": "/public/images/$1"
         },
         {
