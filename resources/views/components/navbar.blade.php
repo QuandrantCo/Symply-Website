@@ -17,7 +17,7 @@
     </div>
     <div class="dropdown-menu">
         <li><a href="#home">HOME</a></li>
-        <li><a href="#academy">ACADEMY</a></li>
+        <li><a href="/academy">ACADEMY</a></li>
         <li><a href="#book">BOOK</a></li>
         <li><a href="#home">SERVICES</a></li>
         <li><a href="#academy">ABOUT US</a></li>
