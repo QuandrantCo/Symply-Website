@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="{{ secure_asset('public/css/app.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('public/fontawesome/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('public/css/navbar.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('public/css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/footer.css') }}">
 
     @stack('css')
 
