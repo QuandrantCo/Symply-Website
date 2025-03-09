@@ -1,6 +1,6 @@
 <div>
     @push('css')
-        <link rel="stylesheet" href="{{ secure_asset('css/academy.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('/public/css/academy.css') }}">
     @endpush
     <div class="academy">
         <div class="background-academy">
