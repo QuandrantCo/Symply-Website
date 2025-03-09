@@ -11,4 +11,5 @@
     "public": true,
     "buildCommand": "vite build",
     "outputDirectory": "public"
+
 }
