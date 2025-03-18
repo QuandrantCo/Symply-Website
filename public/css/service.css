@@ -43,10 +43,15 @@
 
 .card-service img {
     width: 100%;
-
     height: auto;
     object-fit: contain;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+}
 
+.card-service img:hover {
+    transform: scale(1.05); /* Slightly scale up the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow to make the image look like it's popping */
 }
 
 .modal-service {
@@ -184,6 +189,59 @@
     }
 
     .modal-body {
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .main-logo {
+        flex: 1;
+        min-width: 250px;
+        max-width: 60%;
+        text-align: center;
+    }
+
+    .card-service {
+        display: grid;
+        grid-template-columns: 1fr; /* Membuat semua card tampil dalam satu kolom */
+        gap: 15px;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+
+    .card-service img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Reduce text size for mobile */
+    .main-logo h2 {
+        font-size: 18px;
+    }
+
+    .main-logo p {
+        font-size: 14px;
+    }
+
+    .small-logos {
+        flex-direction: row; /* Make small logos horizontal */
+        justify-content: center; /* Center the small logos */
+    }
+
+    .logo-small {
+        width: 50px;
+        height: auto;
+    }
+
+    /* Adjust close icon for mobile */
+    .close {
+        font-size: 24px;
+        top: 10px;
+        right: 25px;
     }
 }
