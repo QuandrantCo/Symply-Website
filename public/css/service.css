@@ -42,16 +42,18 @@
 }
 
 .card-service img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+    width: 100%; /* Membuat gambar mengisi lebar container */
+    height: 200px; /* Menetapkan tinggi tetap untuk gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional dan mengisi area yang tersedia */
     transition: all 0.3s ease-in-out;
     background-color: transparent;
+    border-radius: 10px; /* Jika ingin menambahkan sudut membulat pada gambar */
 }
 
 .card-service img:hover {
-    transform: scale(1.05); /* Slightly scale up the image */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow to make the image look like it's popping */
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .modal-service {
@@ -109,7 +111,7 @@
     overflow: hidden;
 }
 
-/* close */
+
 .close {
     color: #aaa;
     font-size: 28px;
@@ -206,7 +208,7 @@
 
     .card-service {
         display: grid;
-        grid-template-columns: 1fr; /* Membuat semua card tampil dalam satu kolom */
+        grid-template-columns: 1fr;
         gap: 15px;
         max-width: 100%;
         padding: 20px;
@@ -219,7 +221,7 @@
         object-fit: contain;
     }
 
-    /* Reduce text size for mobile */
+
     .main-logo h2 {
         font-size: 18px;
     }
@@ -229,8 +231,8 @@
     }
 
     .small-logos {
-        flex-direction: row; /* Make small logos horizontal */
-        justify-content: center; /* Center the small logos */
+        flex-direction: row;
+        justify-content: center;
     }
 
     .logo-small {
@@ -238,10 +240,11 @@
         height: auto;
     }
 
-    /* Adjust close icon for mobile */
+
     .close {
         font-size: 24px;
         top: 10px;
         right: 25px;
     }
 }
+

@@ -13,21 +13,21 @@
         <div class="content-service">
             <div class="card-service">
                 <!-- Add hover effect with different modal id for each image -->
-                <img src="{{ asset('images/service/service-icon.png') }}" alt="Service 1" class="service-image"
+                <img src="{{ asset('images/service/creambath.svg') }}" alt="Service 1" class="service-image"
                     data-modal="myModal1">
-                <img src="{{ asset('images/service/service-icon.png') }}" alt="Service 2" class="service-image"
+                <img src="{{ asset('images/service/haircut.svg') }}" alt="Service 2" class="service-image"
                     data-modal="myModal2">
-                <img src="{{ asset('images/service/service-icon.png') }}" alt="Service 3" class="service-image"
+                <img src="{{ asset('images/service/perm.svg') }}" alt="Service 3" class="service-image"
                     data-modal="myModal3">
-                <img src="{{ asset('images/service/service-icon.png') }}" alt="Service 4" class="service-image"
+                <img src="{{ asset('images/service/sahving.svg') }}" alt="Service 4" class="service-image"
                     data-modal="myModal4">
-                <img src="{{ asset('images/service/service-icon.png') }}" alt="Service 5" class="service-image"
+                <img src="{{ asset('images/service/coloring.svg') }}" alt="Service 5" class="service-image"
                     data-modal="myModal5">
-                <img src="{{ asset('images/service/service.png') }}" alt="Service 6" class="service-image"
+                <img src="{{ asset('images/service/delivery.svg') }}" alt="Service 6" class="service-image"
                     data-modal="myModal6">
-                <img src="{{ asset('images/service/Creambath-icon.svg') }}" alt="Service 7" class="service-image"
+                <img src="{{ asset('images/service/jumat.svg') }}" alt="Service 7" class="service-image"
                     data-modal="myModal7">
-                <img src="{{ asset('images/service/Creambath-icon.png') }}" alt="Service 8" class="service-image"
+                <img src="{{ asset('images/service/other.svg') }}" alt="Service 8" class="service-image"
                     data-modal="myModal8">
             </div>
         </div>
@@ -38,14 +38,14 @@
                 <span class="close">&times;</span>
                 <div class="modal-body">
                     <div class="main-logo">
-                        <img src="{{ asset('images/service/service-icon.png') }}" alt="Service 1">
+                        <img src="{{ asset('images/service/creambath.svg') }}" alt="Service 1">
                         <h2 class="model-title">CREAMBATH</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
                     </div>
                     <div class="small-logos">
-                        <img src="{{ asset('images/service/Logo-symply.png') }}" alt="Logo 1" class="logo-small">
-                        <img src="{{ asset('images/service/Logo-symply.png') }}" alt="Logo 2" class="logo-small">
-                        <img src="{{ asset('images/service/Logo-symply.png') }}" alt="Logo 3" class="logo-small">
+                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 1" class="logo-small">
+                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 2" class="logo-small">
+                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 3" class="logo-small">
                     </div>
                 </div>
             </div>
@@ -57,14 +57,14 @@
                 <span class="close">&times;</span>
                 <div class="modal-body">
                     <div class="main-logo">
-                        <img src="{{ asset('images/service/service-icon.png') }}" alt="Service 2">
+                        <img src="{{ asset('images/service/haircut.svg') }}" alt="Service 2">
                         <h2 class="model-title">SERVICE 2</h2>
                         <p>Details about service 2...</p>
                     </div>
                     <div class="small-logos">
-                        <img src="{{ asset('images/service/Logo-symply.png') }}" alt="Logo 1" class="logo-small">
-                        <img src="{{ asset('images/service/Logo-symply.png') }}" alt="Logo 2" class="logo-small">
-                        <img src="{{ asset('images/service/Logo-symply.png') }}" alt="Logo 3" class="logo-small">
+                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 1" class="logo-small">
+                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 2" class="logo-small">
+                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 3" class="logo-small">
                     </div>
                 </div>
             </div>
@@ -74,10 +74,11 @@
 @push('js')
     <script>
         // Get all images in the card-service
+        // Get all images in the card-service
         var images = document.querySelectorAll('.service-image');
 
         images.forEach(function(image) {
-            image.addEventListener('mouseenter', function() {
+            image.addEventListener('click', function() { // Ganti 'mouseenter' dengan 'click'
                 var modalId = image.getAttribute('data-modal');
                 var modal = document.getElementById(modalId);
                 modal.style.display = "block"; // Show the modal

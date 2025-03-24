@@ -1,81 +1,107 @@
-.container-footer {
+.footer-container {
+    background-color: #4e3629;
     color: white;
-    height: auto; /* Mengatur tinggi agar menyesuaikan konten */
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-row {
     display: flex;
-    justify-content: space-between; /* Sesuaikan elemen di antara kiri dan kanan */
-    flex-wrap: wrap; /* Memungkinkan elemen untuk berpindah baris */
-    padding: 40px 20px; /* Mengurangi padding agar tidak terlalu besar */
-    background-color: #47301C;
-    max-width: 100%;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.footer-col {
+    flex: 1;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+#company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-logo {
-    text-align: center;
-    flex: 1 1 250px; /* Memastikan logo memiliki ukuran yang fleksibel */
+    width: 100px;
     margin-bottom: 20px;
 }
 
-.footer-logo img {
-    background-color: white;
-    width: 131px;
-    height: 129px;
-    border-radius: 50%;
-    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
-}
 
-.footer-logo .dots {
+.footer-social {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 }
 
-.footer-logo .dots .dots-item {
-    width: 40px;
-    height: 40px;
-    background-color: #d3d3d3;
-    border-radius: 50%;
+
+.footer-social a {
     margin: 0 10px;
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C1E12;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.footer-contact, .footer-opening {
-    max-width: 300px;
-    flex: 1 1 250px; /* Menjaga elemen ini tetap responsif */
-    margin-bottom: 20px;
+
+.footer-social a:hover {
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.6);
 }
 
-.footer-contact p, .footer-opening p {
+
+
+#contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    font-size: 1rem;
     margin: 5px 0;
 }
 
-.footer-contact .footer-map {
-    display: flex;
-    align-items: center;
+
+#location h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
-.footer-contact .footer-map i {
-    margin-right: 5px;
+.map iframe {
+    margin-bottom: 10px;
 }
 
-/* Media Queries for Smaller Devices */
-@media (max-width: 768px) {
-    .container-footer {
-        padding: 20px; /* Mengurangi padding untuk layar kecil */
-        flex-direction: column; /* Mengubah arah flex menjadi kolom */
-        align-items: center; /* Menyusun elemen-elemen di tengah */
-    }
 
-    .footer-logo img {
-        width: 100px; /* Menyesuaikan ukuran gambar logo */
-        height: 100px;
-    }
+#useful-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
 
-    .footer-contact, .footer-opening {
-        text-align: center; /* Menyusun teks ke tengah */
-        margin: 10px 0;
-    }
+#useful-links ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-    .footer-map {
-        justify-content: center;
-    }
+#useful-links ul li {
+    margin-bottom: 10px;
+}
+
+#useful-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#useful-links ul li a:hover {
+    color: #f1c40f;
 }

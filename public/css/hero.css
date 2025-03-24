@@ -1,8 +1,76 @@
-h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-    color: #333;
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
+.hero-background {
+    position: absolute;
+    background-image: url('/images/hero/back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-1, .carousel-2, .carousel-3 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    transition: transform 1s ease;
+}
+
+.carousel-1 {
+    background-color: rgba(101, 67, 33, 1);
+}
+
+.carousel-2 {
+    background-color: rgb(101, 33, 33);
+}
+
+.carousel-3 {
+    background-color: rgb(55, 255, 0);
+}
+
+.carousel-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.carousel-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}

@@ -1,0 +1,68 @@
+.book-container {
+    font-family:  'Inter', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+.book-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the entire div */
+}
+
+.book-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff38; /* Tambahkan transparasi */
+    z-index: 1;
+}
+
+.book-content {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.book-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.book-content button {
+    padding: 10px 20px;
+    background-color: #0B6E45;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .book-content h1 {
+        font-size: 2rem;
+    }
+}
