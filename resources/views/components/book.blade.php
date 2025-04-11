@@ -1,4 +1,4 @@
-<div>
+<div id="book">
     @push('css')
         <link rel="stylesheet" href="{{ asset('css/book.css') }}">
     @endpush
@@ -10,7 +10,9 @@
         <div class="book-overlay">
             <div class="book-content">
                 <h1>Want to cut your hair?</h1>
-                <button>Book Now <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                <a href="https://wa.me/085169765567" target="_blank">
+                    <button>Book Now <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                    </a>
             </div>
         </div>
     </div>

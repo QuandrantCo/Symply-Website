@@ -11,12 +11,17 @@
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="shortcut icon" href="{{ asset('images/service/logo-symply.svg') }}">
 
     @stack('css')
 
     <title>{{ $title ?? config('app.name') }}</title>
 
-
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,6 +34,7 @@
     <x-footer />
     @stack('js')
     <script src="{{ asset('js/navbar.js') }}"></script>
+
 </body>
 
 </html>

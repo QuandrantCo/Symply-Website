@@ -1,4 +1,4 @@
-<div>
+<div id="service">
     @push('css')
         <link rel="stylesheet" href="{{ asset('css/service.css') }}">
     @endpush
@@ -40,12 +40,15 @@
                     <div class="main-logo">
                         <img src="{{ asset('images/service/creambath.svg') }}" alt="Service 1">
                         <h2 class="model-title">CREAMBATH</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                        <p>Creambath adalah perawatan rambut yang bertujuan untuk menutrisi dan melembapkan rambut serta
+                            kulit kepala. Proses ini melibatkan pengaplikasian krim khusus yang kaya akan vitamin dan
+                            nutrisi, disertai dengan pijatan lembut untuk meningkatkan sirkulasi darah di kulit kepala.
+                            Hasilnya, rambut menjadi lebih halus, berkilau, dan terasa lebih sehat</p>
                     </div>
                     <div class="small-logos">
-                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 1" class="logo-small">
-                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 2" class="logo-small">
-                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 3" class="logo-small">
+                        <img src="{{ asset('images/service/creambath-1.jpg') }}" alt="Logo 1" class="logo-small">
+                        <img src="{{ asset('images/service/creambath-2.jpg') }}" alt="Logo 2" class="logo-small">
+                        <img src="{{ asset('images/service/creambath-3.jpg') }}" alt="Logo 3" class="logo-small">
                     </div>
                 </div>
             </div>
@@ -58,13 +61,35 @@
                 <div class="modal-body">
                     <div class="main-logo">
                         <img src="{{ asset('images/service/haircut.svg') }}" alt="Service 2">
-                        <h2 class="model-title">SERVICE 2</h2>
-                        <p>Details about service 2...</p>
+                        <h2 class="model-title">HAIRCUT</h2>
+                        <p>Layanan Haircut adalah proses pemotongan dan penataan rambut yang disesuaikan dengan bentuk
+                            wajah, gaya hidup, dan tren terkini. Dengan teknik profesional, layanan ini tidak hanya
+                            memperbarui penampilan tetapi juga meningkatkan rasa percaya diri.</p>
                     </div>
                     <div class="small-logos">
-                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 1" class="logo-small">
-                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 2" class="logo-small">
-                        <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Logo 3" class="logo-small">
+                        <img src="{{ asset('images/service/haircut-1.png') }}" alt="Logo 1" class="logo-small">
+                        <img src="{{ asset('images/service/haircut-2.png') }}" alt="Logo 2" class="logo-small">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModal3" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                    <div class="main-logo">
+                        <img src="{{ asset('images/service/perm.svg') }}" alt="Service 2">
+                        <h2 class="model-title">PERM</h2>
+                        <p>Layanan Perm adalah proses kimia yang mengubah struktur rambut lurus menjadi ikal atau
+                            bergelombang secara permanen, memberikan volume dan tekstur tambahan. Proses ini melibatkan
+                            penggunaan larutan khusus dan alat pemanas untuk membentuk pola ikal yang diinginkan,
+                            menghasilkan tampilan rambut yang lebih penuh dan dinamis.</p>
+                    </div>
+                    <div class="small-logos">
+                        <img src="{{ asset('images/service/perm-1.jpg') }}" alt="Logo 1" class="logo-small">
+                        <img src="{{ asset('images/service/perm-2.jpg') }}" alt="Logo 2" class="logo-small">
+                        <img src="{{ asset('images/service/perm-3.jpg') }}" alt="Logo 3" class="logo-small">
                     </div>
                 </div>
             </div>

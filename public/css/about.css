@@ -46,6 +46,16 @@
     margin-bottom: 20px;
 }
 
+.about-background{
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+
 /* Responsivitas: Menyesuaikan teks pada layar kecil */
 @media screen and (max-width: 768px) {
     .about-content {

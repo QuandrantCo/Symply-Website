@@ -1,9 +1,9 @@
-<div>
+<div id="about">
     @push('css')
         <link rel="stylesheet" href="{{ asset('css/about.css') }}">
     @endpush
     <div class="about-container">
-        <div class="hero-background">
+        <div class="about-background">
             <img src="{{ asset('images/about/about.png') }}" alt="About Us Image" class="background-image">
             <!-- Replace this path with your actual image path -->
         </div>

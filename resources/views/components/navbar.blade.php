@@ -1,15 +1,20 @@
+@php
+    function anchor($id) {
+        return url('/#' . $id);
+    }
+@endphp
 <header>
     <div class="navbar">
         <ul class="links">
-            <li><a href="#home">HOME</a></li>
+            <li><a href="{{ anchor('home') }}">HOME</a></li>
             <li><a href="/academy">ACADEMY</a></li>
-            <li><a href="#book">BOOK</a></li>
+            <li><a href="{{ anchor('book') }}">BOOK</a></li>
         </ul>
         <div class="logo"><img src="{{ asset('images/service/logo-symply.svg') }}" alt="Logo"></div>
         <ul class="links">
-            <li><a href="#home">SERVICES</a></li>
-            <li><a href="#academy">ABOUT US</a></li>
-            <li><a href="#book">CONTACT US</a></li>
+            <li><a href="{{ anchor('service') }}">SERVICES</a></li>
+            <li><a href="{{ anchor('about') }}">ABOUT US</a></li>
+            <li><a href="{{ anchor('contact') }}">CONTACT US</a></li>
         </ul>
         <div class="toggle_btn">
             <i class="fas fa-bars"></i>
