@@ -3,7 +3,7 @@
     <div class="footer-container">
         <div class="footer-row">
             <div class="footer-col" id="company">
-                <img src="{{ asset('images/footer/logo-footer.png') }}" alt="Simply Haircut" class="footer-logo">
+                <img src="{{ asset('storage/images/footer/logo-footer.png') }}" alt="Simply Haircut" class="footer-logo">
                 <div class="footer-social">
                     <a href="https://www.instagram.com/simplyhaircut?igsh=a3Bzd3dxdjRreG4=" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-tiktok"></i></a>

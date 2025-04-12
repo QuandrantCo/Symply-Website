@@ -8,8 +8,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2; /* pastikan lebih tinggi dari Flickity */
-    background-image: url('/images/hero/back.png');
+    z-index: 2;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,18 +25,13 @@
     z-index: 1;
 }
 
-
-.carousel-1 {
-    background-color: rgba(101, 67, 33, 1);
+.carousel-1, .carousel-2, .carousel-3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.carousel-2 {
-    background-color: rgb(101, 33, 33);
-}
 
-.carousel-3 {
-    background-color: rgb(55, 255, 0);
-}
 
 .carousel-content h1 {
     font-size: 3rem;
@@ -77,4 +71,34 @@
     align-items: center;
     color: white;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .carousel-1{
+        background-size: contain; /* Menyesuaikan gambar tanpa terpotong */
+        background-position: center;
+    }
+
+    .hero-container {
+        height: 50vh;
+    }
+    .hero-background {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .carousel-arrow {
+        top: 50%;
+    }
+
+    .carousel-wrapper {
+        width: 100%;
+        height: 50vh;
+    }
+
 }

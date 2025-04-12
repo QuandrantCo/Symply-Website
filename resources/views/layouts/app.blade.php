@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
-    <link rel="shortcut icon" href="{{ asset('images/service/logo-symply.svg') }}">
+    <link rel="shortcut icon" href="{{ asset('storage/images/service/logo-symply.svg') }}">
 
     @stack('css')
 

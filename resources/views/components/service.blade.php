@@ -13,21 +13,21 @@
         <div class="content-service">
             <div class="card-service">
                 <!-- Add hover effect with different modal id for each image -->
-                <img src="{{ asset('images/service/creambath.svg') }}" alt="Service 1" class="service-image"
+                <img src="{{ asset('storage/images/service/creambath.svg') }}" alt="Service 1" class="service-image"
                     data-modal="myModal1">
-                <img src="{{ asset('images/service/haircut.svg') }}" alt="Service 2" class="service-image"
+                <img src="{{ asset('storage/images/service/haircut.svg') }}" alt="Service 2" class="service-image"
                     data-modal="myModal2">
-                <img src="{{ asset('images/service/perm.svg') }}" alt="Service 3" class="service-image"
+                <img src="{{ asset('storage/images/service/perm.svg') }}" alt="Service 3" class="service-image"
                     data-modal="myModal3">
-                <img src="{{ asset('images/service/sahving.svg') }}" alt="Service 4" class="service-image"
+                <img src="{{ asset('storage/images/service/sahving.svg') }}" alt="Service 4" class="service-image"
                     data-modal="myModal4">
-                <img src="{{ asset('images/service/coloring.svg') }}" alt="Service 5" class="service-image"
+                <img src="{{ asset('storage/images/service/coloring.svg') }}" alt="Service 5" class="service-image"
                     data-modal="myModal5">
-                <img src="{{ asset('images/service/delivery.svg') }}" alt="Service 6" class="service-image"
+                <img src="{{ asset('storage/images/service/delivery.svg') }}" alt="Service 6" class="service-image"
                     data-modal="myModal6">
-                <img src="{{ asset('images/service/jumat.svg') }}" alt="Service 7" class="service-image"
+                <img src="{{ asset('storage/images/service/jumat.svg') }}" alt="Service 7" class="service-image"
                     data-modal="myModal7">
-                <img src="{{ asset('images/service/other.svg') }}" alt="Service 8" class="service-image"
+                <img src="{{ asset('storage/images/service/other.svg') }}" alt="Service 8" class="service-image"
                     data-modal="myModal8">
             </div>
         </div>
@@ -38,7 +38,7 @@
                 <span class="close">&times;</span>
                 <div class="modal-body">
                     <div class="main-logo">
-                        <img src="{{ asset('images/service/creambath.svg') }}" alt="Service 1">
+                        <img src="{{ asset('storage/images/service/creambath.svg') }}" alt="Service 1">
                         <h2 class="model-title">CREAMBATH</h2>
                         <p>Creambath adalah perawatan rambut yang bertujuan untuk menutrisi dan melembapkan rambut serta
                             kulit kepala. Proses ini melibatkan pengaplikasian krim khusus yang kaya akan vitamin dan
@@ -46,9 +46,9 @@
                             Hasilnya, rambut menjadi lebih halus, berkilau, dan terasa lebih sehat</p>
                     </div>
                     <div class="small-logos">
-                        <img src="{{ asset('images/service/creambath-1.jpg') }}" alt="Logo 1" class="logo-small">
-                        <img src="{{ asset('images/service/creambath-2.jpg') }}" alt="Logo 2" class="logo-small">
-                        <img src="{{ asset('images/service/creambath-3.jpg') }}" alt="Logo 3" class="logo-small">
+                        <img src="{{ asset('storage/images/service/creambath-1.jpg') }}" alt="Logo 1" class="logo-small">
+                        <img src="{{ asset('storage/images/service/creambath-2.jpg') }}" alt="Logo 2" class="logo-small">
+                        <img src="{{ asset('storage/images/service/creambath-3.jpg') }}" alt="Logo 3" class="logo-small">
                     </div>
                 </div>
             </div>
@@ -60,15 +60,15 @@
                 <span class="close">&times;</span>
                 <div class="modal-body">
                     <div class="main-logo">
-                        <img src="{{ asset('images/service/haircut.svg') }}" alt="Service 2">
+                        <img src="{{ asset('storage/images/service/haircut.svg') }}" alt="Service 2">
                         <h2 class="model-title">HAIRCUT</h2>
                         <p>Layanan Haircut adalah proses pemotongan dan penataan rambut yang disesuaikan dengan bentuk
                             wajah, gaya hidup, dan tren terkini. Dengan teknik profesional, layanan ini tidak hanya
                             memperbarui penampilan tetapi juga meningkatkan rasa percaya diri.</p>
                     </div>
                     <div class="small-logos">
-                        <img src="{{ asset('images/service/haircut-1.png') }}" alt="Logo 1" class="logo-small">
-                        <img src="{{ asset('images/service/haircut-2.png') }}" alt="Logo 2" class="logo-small">
+                        <img src="{{ asset('storage/images/service/haircut-1.png') }}" alt="Logo 1" class="logo-small">
+                        <img src="{{ asset('storage/images/service/haircut-2.png') }}" alt="Logo 2" class="logo-small">
 
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                 <span class="close">&times;</span>
                 <div class="modal-body">
                     <div class="main-logo">
-                        <img src="{{ asset('images/service/perm.svg') }}" alt="Service 2">
+                        <img src="{{ asset('storage/images/service/perm.svg') }}" alt="Service 2">
                         <h2 class="model-title">PERM</h2>
                         <p>Layanan Perm adalah proses kimia yang mengubah struktur rambut lurus menjadi ikal atau
                             bergelombang secara permanen, memberikan volume dan tekstur tambahan. Proses ini melibatkan
@@ -87,9 +87,9 @@
                             menghasilkan tampilan rambut yang lebih penuh dan dinamis.</p>
                     </div>
                     <div class="small-logos">
-                        <img src="{{ asset('images/service/perm-1.jpg') }}" alt="Logo 1" class="logo-small">
-                        <img src="{{ asset('images/service/perm-2.jpg') }}" alt="Logo 2" class="logo-small">
-                        <img src="{{ asset('images/service/perm-3.jpg') }}" alt="Logo 3" class="logo-small">
+                        <img src="{{ asset('storage/images/service/perm-1.jpg') }}" alt="Logo 1" class="logo-small">
+                        <img src="{{ asset('storage/images/service/perm-2.jpg') }}" alt="Logo 2" class="logo-small">
+                        <img src="{{ asset('storage/images/service/perm-3.jpg') }}" alt="Logo 3" class="logo-small">
                     </div>
                 </div>
             </div>

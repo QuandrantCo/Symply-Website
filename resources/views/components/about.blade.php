@@ -4,7 +4,7 @@
     @endpush
     <div class="about-container">
         <div class="about-background">
-            <img src="{{ asset('images/about/about.png') }}" alt="About Us Image" class="background-image">
+            <img src="{{ asset('storage/images/about/about.png') }}" alt="About Us Image" class="background-image">
             <!-- Replace this path with your actual image path -->
         </div>
         <div class="about-overlay">

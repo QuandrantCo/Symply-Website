@@ -1,6 +1,21 @@
 @push('css')
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    {{-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> --}}
+    <link rel="stylesheet" href="{{ asset('css/flickity.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/hero.css') }}">
+    <style>
+        .hero-background {
+            background-image: url('{{ asset('storage/images/hero/back.png') }}');
+        }
+        .carousel-1 {
+            background-image: url('{{ asset('storage/images/hero/carousel-1.png') }}');
+        }
+        .carousel-2 {
+            background-image: url('{{ asset('storage/images/hero/carousel-2.png') }}');
+        }
+        .carousel-3 {
+            background-image: url('{{ asset('storage/images/hero/carousel-3.png') }}');
+        }
+    </style>
 @endpush
 <div id="hero">
     <div class="hero-container">
@@ -20,22 +35,22 @@
 
             <div class="carousel-cell carousel-1">
                 <div class="carousel-content">
-                    <h1>Carousel 1</h1>
-                    <p>This is the first carousel slide.</p>
+                    {{-- <h1>Carousel 1</h1>
+                    <p>This is the first carousel slide.</p> --}}
                 </div>
             </div>
 
             <div class="carousel-cell carousel-2">
                 <div class="carousel-content">
-                    <h1>Carousel 2</h1>
-                    <p>This is the second carousel slide.</p>
+                    {{-- <h1>Carousel 2</h1>
+                    <p>This is the second carousel slide.</p> --}}
                 </div>
             </div>
 
             <div class="carousel-cell carousel-3">
                 <div class="carousel-content">
-                    <h1>Carousel 3</h1>
-                    <p>This is the third carousel slide.</p>
+                    {{-- <h1>Carousel 3</h1>
+                    <p>This is the third carousel slide.</p> --}}
                 </div>
             </div>
         </div>
@@ -50,13 +65,13 @@
     </div>
 
     @push('js')
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+        {{-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> --}}
+        <script src="{{ asset('js/flickity.pkgd.min.js') }}"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 const flkty = new Flickity('.js-flickity', {
                     wrapAround: true,
-                    autoPlay: 3000,
+                    autoPlay: 2000,
                     pageDots: false,
                     prevNextButtons: false,
                     cellAlign: 'center',

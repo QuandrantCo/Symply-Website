@@ -4,7 +4,7 @@
     @endpush
     <div class="book-container">
         <div class="book-background">
-            <img src="{{ asset('images/book/book2.png') }}" alt="About Us Image" class="background-image">
+            <img src="{{ asset('storage/images/book/book2.png') }}" alt="About Us Image" class="background-image">
             <!-- Replace this path with your actual image path -->
         </div>
         <div class="book-overlay">

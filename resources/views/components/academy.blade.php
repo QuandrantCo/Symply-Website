@@ -1,6 +1,11 @@
 <div>
     @push('css')
         <link rel="stylesheet" href="{{ asset('css/academy.css') }}">
+        <style>
+            .background-academy {
+                background-image: url('{{ asset('storage/images/academy/back-academy.svg') }}');
+            }
+        </style>
     @endpush
     <div class="academy">
         <div class="background-academy">
