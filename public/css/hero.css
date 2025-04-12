@@ -74,7 +74,11 @@
 }
 
 @media (max-width: 768px) {
-
+    .carousel-1, .carousel-2, .carousel-3{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     .hero-container {
         height: 50vh;
     }
