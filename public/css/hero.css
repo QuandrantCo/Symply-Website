@@ -25,7 +25,7 @@
     z-index: 1;
 }
 
-.carousel-1, .carousel-2, .carousel-3{
+.carousel-1, .carousel-2, .carousel-3,.carousel-4,.carousel-5{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

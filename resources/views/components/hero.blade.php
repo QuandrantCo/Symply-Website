@@ -10,10 +10,16 @@
             background-image: url('{{ asset('storage/images/hero/carousel-1.png') }}');
         }
         .carousel-2 {
-            background-image: url('{{ asset('storage/images/hero/carousel-2.png') }}');
+            background-image: url('{{ asset('storage/images/hero/carousel-2.jpg') }}');
         }
         .carousel-3 {
             background-image: url('{{ asset('storage/images/hero/carousel-3.png') }}');
+        }
+        .carousel-4 {
+            background-image: url('{{ asset('storage/images/hero/carousel-4.png') }}');
+        }
+        .carousel-5 {
+            background-image: url('{{ asset('storage/images/hero/carousel-5.png') }}');
         }
     </style>
 @endpush
@@ -48,6 +54,18 @@
             </div>
 
             <div class="carousel-cell carousel-3">
+                <div class="carousel-content">
+                    {{-- <h1>Carousel 3</h1>
+                    <p>This is the third carousel slide.</p> --}}
+                </div>
+            </div>
+            <div class="carousel-cell carousel-4">
+                <div class="carousel-content">
+                    {{-- <h1>Carousel 3</h1>
+                    <p>This is the third carousel slide.</p> --}}
+                </div>
+            </div>
+            <div class="carousel-cell carousel-5">
                 <div class="carousel-content">
                     {{-- <h1>Carousel 3</h1>
                     <p>This is the third carousel slide.</p> --}}
