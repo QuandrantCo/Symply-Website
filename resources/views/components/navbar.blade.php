@@ -10,7 +10,7 @@
             <li><a href="/academy">ACADEMY</a></li>
             <li><a href="{{ anchor('book') }}">BOOK</a></li>
         </ul>
-        <div class="logo"><img src="{{ asset('storage/images/navbar/simply-icon.svg') }}" alt="Logo"></div>
+        <div class="logo"><img src="{{ asset('storage/images/navbar/simplyicon-outline.svg') }}" alt="Logo"></div>
         <ul class="links">
             <li><a href="{{ anchor('service') }}">SERVICES</a></li>
             <li><a href="{{ anchor('about') }}">ABOUT US</a></li>
