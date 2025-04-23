@@ -22,6 +22,35 @@
             scroll-behavior: smooth;
         }
     </style>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --primary-color: #6200ee;
+        }
+
+        .dark-mode {
+            --bg-color: #121212;
+            --text-color: #f5f5f5;
+            --primary-color: #bb86fc;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>

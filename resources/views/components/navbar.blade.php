@@ -10,7 +10,7 @@
             <li><a href="/academy">ACADEMY</a></li>
             <li><a href="{{ anchor('book') }}">BOOK</a></li>
         </ul>
-        <div class="logo"><img src="{{ asset('storage/images/navbar/simplyicon-outline.svg') }}" alt="Logo"></div>
+        <div class="logo"><img src="{{ asset('storage/images/navbar/simplywith-outline.svg') }}" alt="Logo"></div>
         <ul class="links">
             <li><a href="{{ anchor('service') }}">SERVICES</a></li>
             <li><a href="{{ anchor('about') }}">ABOUT US</a></li>
@@ -27,6 +27,8 @@
         <li><a href="{{ anchor('service') }}">SERVICES</a></li>
         <li><a href="{{ anchor('about') }}">ABOUT US</a></li>
         <li><a href="{{ anchor('contact') }}">CONTACT US</a></li>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+
     </div>
 </header>
 @push('js')
