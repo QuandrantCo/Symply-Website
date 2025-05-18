@@ -1,37 +1,372 @@
-
-
 .container-academy {
-    margin: auto;
+    display: flex;
     width: 100%;
+    flex-direction: column;
+}
+
+.container-title-academy {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    /* height: 10%; */
+    margin-top: 15%;
+}
+
+.container-sub-academy {
+    background-color: #0B6E45;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 20%; */
+}
+
+.container-content-academy {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+.content-title-academy {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    width: 64%;
+    margin-top: 2%;
+    font-weight: bold;
+    color: #47301C;
 }
 
 .title-academy {
-    text-align: center;
-    margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
-    font-size: 2rem;
+    color: white;
+    font-size: 30px;
     font-weight: bold;
-    color:white;
+
 }
 
-.sub-title-academy {
-    text-align: center;
+.title-sub-academy {
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
     color: white;
-}
-.background-academy {
-    background-image: url('/images/academy/back-academy.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
+    font-size: 30px;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.background-academy {
+
+    background-size: cover;
+}
+
+.container-end {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+.title-end {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #47301C;
+}
+
+/* faq */
+.container-faq {
+    width: 70%;
+    margin-top: 2%;
+}
+
+.faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.faq.active {
+    border: none;
+}
+
+.accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.accordion i {
+    font-size: 1.6rem;
+}
+
+.active,
+.accordion:hover {
+    background-color: #a5d4c4;
+}
+
+.pannel {
+    padding: 0 1rem 1rem 1rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #a5d4c4;
+    display: none;
+    justify-items: start;
+}
+
+.pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    line-height: 1.4;
+    list-style-type: circle;
+    text-align: left;
+}
+
+.container-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.card-title {
+    background-color: #0B6E45;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.card-title h2 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.card-content {
+    background-color: #47301C;
+    width: 100%;
+    margin: 0 auto;
+    /* tengah horizontal */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px 25px;
+    width: 220px;
+    /* ukuran tetap agar seragam */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    min-height: 420px;
+    /* agar semua card punya tinggi minimal yang sama */
+}
+
+/* Hover efek timbul */
+.card:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35);
+    transform: translateY(-10px);
+}
+
+/* Judul utama card */
+.title {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Subtitle (jumlah pertemuan) */
+.subtitle {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Harga lama (coret) */
+.price-old {
+    text-align: center;
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Harga baru */
+.price-new {
+    text-align: center;
+    font-weight: 800;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Label Course */
+.course-title {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* List course */
+.course-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Item list course */
+.course-list li {
+    font-size: 13px;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+    color: #222;
+}
+
+/* Icon checklist di depan item list */
+.course-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.container-daftar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.title-daftar {
+    background-color: #0B6E45;
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.title-daftar h2 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 2%;
+}
+
+.content-daftar {
+    width: 50%;
+    height: 20%;
+    justify-content: start;
+    align-items: center;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list ul li {
+    color: #47301C;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sub-list {
+    color: #47301C;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: semibold;
+}
+
+.button-daftar button {
+    background-color: #0B6E45;
+    /* warna hijau tua */
+    color: white;
+    /* warna teks putih */
+    border: none;
+    /* hilangkan border default */
+    padding: 10px 20px;
+    /* beri ruang dalam button */
+    border-radius: 5px;
+    /* buat sudut membulat */
+    cursor: pointer;
+    /* pointer saat hover */
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 35%;
+    margin-bottom: 35%;
+}
+
+.button-daftar button:hover {
+    background-color: #094f33;
+    /* warna hijau lebih gelap saat hover */
+}
+
+@media screen and (max-width: 600px) {
+    .title-academy {
+        font-size: 14px;
+    }
+    .title-sub-academy{
+        font-size: 14px;
+    }
+    .list ul li{
+        font-size: 12px;
+    }
+    .content-daftar{
+        width: 60%;
+    }
+    .sub-list{
+        font-size: 10px;
+    }
+    .content-title-academy{
+        font-size: 14px;
+    }
+    .title-end{
+        font-size: 14px;
+    }
+
+    .pannel p{
+        font-size: 10px;
+    }
+
 }
