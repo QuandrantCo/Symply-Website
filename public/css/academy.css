@@ -129,7 +129,7 @@
 }
 
 .pannel p {
-    color: rgba(0, 0, 0, 0.7);
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     line-height: 1.4;
     list-style-type: circle;
@@ -346,27 +346,58 @@
     .title-academy {
         font-size: 14px;
     }
-    .title-sub-academy{
+
+    .title-sub-academy {
         font-size: 14px;
     }
-    .list ul li{
+
+    .list ul li {
         font-size: 12px;
     }
-    .content-daftar{
+
+    .content-daftar {
         width: 60%;
     }
-    .sub-list{
-        font-size: 10px;
-    }
-    .content-title-academy{
-        font-size: 14px;
-    }
-    .title-end{
-        font-size: 14px;
-    }
 
-    .pannel p{
+    .sub-list {
         font-size: 10px;
     }
 
+    .content-title-academy {
+        font-size: 14px;
+    }
+
+    .title-end {
+        font-size: 14px;
+    }
+
+    .pannel p {
+        font-size: 10px;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    .accordion {
+        background-color: #5a5a5a86;
+        color: #ffffff;
+    }
+
+    .accordion:hover,
+    .active {
+        background-color: #094f33;
+    }
+
+    .accordion i {
+        color: #ccc;
+    }
+
+    .pannel {
+        background-color: #094f33;
+        color: #eee;
+    }
+
+    .pannel p {
+        color: #eee;
+    }
 }
