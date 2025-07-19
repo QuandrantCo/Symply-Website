@@ -53,7 +53,7 @@
                         </p>
 
                         <p>• Kesempatan untuk berlatih dengan klien real dan membangun portofolio anda kedepan</p>
-                        
+
 
                         <p>• Dukungan penuh untuk membantu Anda memulai karir sebagai barber
                         </p>
@@ -147,6 +147,7 @@
                         <li>Teknik Gunting (Longtrim)</li>
                         <li>Coloring</li>
                         <li>Free Clipper / Alat Cukur</li>
+                        <li>Free Clipper / Disalurkan Kerja</li>
                     </ul>
                 </div>
             </div>
